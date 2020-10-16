@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+      --blue: #4296ea;
+      --orange: #e3bd4a;
+      --red: #b22f2f;
+      --yellow: #fbfb46;
+  }
+
+  header {
+    height: 400px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-image: url("../images/fcbarca.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  header nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+  }
+
+  header h1 {
+      margin: 0;
+  }
+  header a {
+      text-decoration: none;
+      padding: 5px;
+      font-size: 36px;
+      color: var(--yellow);
+      font-weight: bolder;
+  }
