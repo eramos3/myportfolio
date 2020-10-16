@@ -22,4 +22,4 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ```
 git clone git@github.com:eramos3/myportfolio.git
 ```
-[working deployed link recording]("")
+[working deployed link recording]("") 
