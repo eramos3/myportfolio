@@ -24,4 +24,4 @@ git clone git@github.com:eramos3/myportfolio.git
 ```
 [working deployed link recording]("https://drive.google.com/file/d/1F2xJ-h5Em2Nl34yzbOx3hXOgK_VD3l35/view") 
 
-! [Portfolio Screeshot] (./assets/images/portfolio-screenshot.png)
+![Portfolio Screeshot](./assets/images/portfolio-screenshot.png)
