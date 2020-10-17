@@ -22,6 +22,8 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ```
 git clone git@github.com:eramos3/myportfolio.git
 ```
-![working deployed link recording](https://drive.google.com/file/d/1F2xJ-h5Em2Nl34yzbOx3hXOgK_VD3l35/view) 
+![working deployed link recording]("https://drive.google.com/file/d/1F2xJ-h5Em2Nl34yzbOx3hXOgK_VD3l35/view") 
 
 ![Portfolio Screeshot](./assets/images/portfolio-screenshot.png)
+
+https://drive.google.com/file/d/1F2xJ-h5Em2Nl34yzbOx3hXOgK_VD3l35/view
