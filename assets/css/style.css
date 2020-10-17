@@ -1,27 +1,27 @@
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
   :root {
-      --blue: #4296ea;
+      --blue: #194775;
       --orange: #e3bd4a;
       --red: #b22f2f;
       --yellow: #fbfb46;
   }
 
+  body {
+      background-color: var(--blue);
+      margin: 10px;
+  }
   header {
-    height: 400px;
-    width: 100%;
     padding: 20px;
+    background-color: var(--red);
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-start;
-    background-image: url("../images/fcbarca.jpg");
-    background-size: cover;
-    background-position: center;
+   
   }
 
   header nav ul {
@@ -32,13 +32,21 @@
       list-style: none;
   }
 
-  header h1 {
-      margin: 0;
-  }
   header a {
       text-decoration: none;
-      padding: 5px;
+      padding: 10px;
       font-size: 36px;
-      color: var(--yellow);
+      color: var(--orange);
       font-weight: bolder;
+  }
+  /* hero section */
+.hero {
+    height: 400px;
+    width: 100%;
+    background-image: url("../images/fcbarca.jpg");
+    background-size: cover;
+    background-position: 75%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
   }
