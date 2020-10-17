@@ -14,6 +14,16 @@
   body {
       background-color: var(--blue);
   }
+
+  a {
+    color: var(--orange);
+    text-decoration: none;
+  }
+
+  a:hover {
+    font-weight: bolder;
+    color: var(--blue);
+  }
   header {
     padding: 20px;
     background-color: var(--red);
@@ -32,11 +42,9 @@
 }
 
 header a {
-    text-decoration: none;
     padding: 10px;
     margin-right: 5px;
     font-size: 36px;
-    color: var(--orange);
     font-weight: bolder;
 }
 
@@ -64,7 +72,7 @@ li {
     color: var(--yellow);
     width: 25%;
     margin: 35px auto 35px auto;
-    border-bottom-style: solid;
+    border: solid;
     justify-content: center;
 
 }
@@ -142,6 +150,10 @@ li {
     text-align: center;
   }
 
+  .grid-item a {
+    color: var(--red);
+  }
+
   .a1 {
       grid-column: 3/ span 2;
       grid-row: 1/ span 2;
@@ -169,5 +181,27 @@ li {
 
   /* contact section */
 
+
+.article-container {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--red);
+  align-items: center;
+  justify-content:space-around;
+  color: var(--orange);
+  font-size: 20px;
+}
+
   
-  
+.article-container div ul {
+  display: flex;
+}
+
+.article-container div ul li {
+  padding: 20px;
+}
+
+.article-container a {
+  text-transform: uppercase;
+}
