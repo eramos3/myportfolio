@@ -152,6 +152,12 @@ li {
 
   .grid-item a {
     color: var(--red);
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .grid-item a:hover {
+    color: var(--orange);
   }
 
   .a1 {
@@ -169,6 +175,8 @@ li {
   .a4 {
     grid-column: 1/ span 2;
     grid-row: 2/ span 2;
+    background-image: url("../images/runbuddy.jpg");
+    background-size: cover;
   }
   .a5 {
     grid-column: 3/ span 2;
@@ -177,6 +185,8 @@ li {
   .a6 {
     grid-column: 5/ span 1;
     grid-row: 2/ span 2;
+    background-image: url("../images/horiseon.jpg");
+    background-size: cover;
   }
 
   /* contact section */
@@ -205,3 +215,4 @@ li {
 .article-container a {
   text-transform: uppercase;
 }
+
