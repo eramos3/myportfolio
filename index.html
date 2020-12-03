@@ -1,100 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./assets/css/style.css">
+
 <body>
-    <!-- Navigation -->
-    <header>
-        <h1><a href="#">Cisco's Portfolio</a></h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact Info</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- hero -->
-    <section class="hero"></section>
+    <!-- Sidebar with image -->
+    <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+        <div class="bgimg"></div>
+    </nav>
 
-    <!-- about section -->
-    <section id="about">
-        <div class="sectitle flexrow ">
-            <h2>About Me</h2>
+    <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+    <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge"
+        style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+        <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright"
+            style="padding:0 12px;">
+            <i class="fa fa-remove"></i>
+        </a>
+        <div class="w3-bar-block w3-center">
+            <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+                onclick="closeNav()">Portfolio</a>
+            <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+                onclick="closeNav()">Contact</a>
         </div>
-        <div>
-            <article class="content">
-                <div class="me-img"> </div>
-                <div class="my-bio">
-                    <h3>Eder Francisco Ramos</h3> 
-                    <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
-                      itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
-                    </p>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="w3-main w3-padding-large" style="margin-left:40%">
+
+        <!-- Menu icon to open sidebar -->
+        <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;"
+            onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+        <!-- Header -->
+        <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+            <h1 class="w3-jumbo"><b>Eder Francisco Ramos</b></h1>
+            <p>Current Web Developer Student .</p>
+            <!-- <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+                <i class="fa fa-download"></i> Download Resume
+            </button> -->
+        </header>
+
+        <!-- Portfolio Section -->
+        <div class="w3-padding-32 w3-content" id="portfolio">
+            <h2 class="w3-text-grey">My Portfolio</h2>
+            <hr class="w3-opacity">
+
+            <!-- Grid for photos -->
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-half">
+                    
                 </div>
-            </article>
-        </div>
-    </section>
 
-    <!-- projects section -->
-    <section id="projects">
-        <div class="flexrow sectitle">
-            <h2>My Projects</h2>
+                <div class="w3-half">
+                    
+                </div>
+                <!-- End photo grid -->
+            </div>
+            <!-- End Portfolio Section -->
         </div>
-        <article class="projects">
-            <div class="grid-wrapper">
-                <div class="grid-container">
-                    <div class="grid-item a1">
-                        <a href="#">1</a>
-                    </div>
-                    <div class="grid-item a2">
-                        <a href="#">2</a>
-                    </div>
-                    <div class="grid-item a3">
-                        <a href="#">3</a>
-                    </div>
-                    <div class="grid-item a4">
-                        <a href="#">4</a>
-                    </div>
-                    <div class="grid-item a5">
-                        <a href="#">5</a>
-                    </div>
-                    <div class="grid-item a6">
-                        <a href="#">6</a>
-                    </div>
+
+        <!-- About Section -->
+        <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+            <h2>About</h2>
+            <hr class="w3-opacity">
+            <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                id est laborum consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <h3 class="w3-padding-16">My Skills</h3>
+            <p class="w3-wide">Photography</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
+            </div>
+            <p class="w3-wide">Web Design</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
+            </div>
+            <p class="w3-wide">Photoshop</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+            </div><br>
+
+            <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+                <div class="w3-quarter w3-section">
+                    <span class="w3-xlarge">14+</span><br>
+                    Partners
+                </div>
+                <div class="w3-quarter w3-section">
+                    <span class="w3-xlarge">55+</span><br>
+                    Projects Done
+                </div>
+                <div class="w3-quarter w3-section">
+                    <span class="w3-xlarge">89+</span><br>
+                    Happy Clients
+                </div>
+                <div class="w3-quarter w3-section">
+                    <span class="w3-xlarge">150+</span><br>
+                    Meetings
                 </div>
             </div>
-        </article>
-    </section>
-
-    <!-- contact section -->
-    <footer id="contact">
-        <div class="flexrow sectitle">
-            <h2>Contact Me</h2>
+            <!-- resume -->
+            <!-- <button class="w3-button w3-light-grey w3-padding-large w3-section">
+                <i class="fa fa-download"></i> Download Resume
+            </button>
+             -->
+            <!-- End About Section -->
         </div>
-       <article class="article-container">
-           <h4>
-               <p>Feel free to reach out at any of the following links</p>
-           </h4>
-           <div>
-                <ul>
-                    <li><a href="#">myemail</a></li>
-                    <li><a href="#">linkedin</a></li>
-                    <li><a href="#">github</a></li>
-                </ul>
-           </div>
-       </article>
-    </footer>
+
+        <!-- Contact Section -->
+        <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+            <h2>Contact Me</h2>
+            <hr class="w3-opacity">
+
+            <div class="w3-section">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Los Angeles, US</p>
+                <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: efpramos3@gmail.com</p>
+            </div>
+            <!-- End Contact Section -->
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+            <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+                    class="w3-hover-text-green">w3.css</a></p>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+    </div>
+    <script src="./assets/js/script.js"></script>
+
 </body>
+
 </html>
