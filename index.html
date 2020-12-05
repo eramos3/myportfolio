@@ -29,25 +29,24 @@
             <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
                 onclick="closeNav()">Contact</a>
         </div>
-        <div>
-            <article class="content">
-                <div class="me-img"> </div>
-                <div class="my-bio">
-                    <h3>Eder Francisco Ramos</h3> 
-                    <p>
-                      Hi everyone and welcome to my portfolio. As you can see I'm a big sports fan, actually more of a soccer
-                      fan overall but, I still like to be a super-fan when it comes to LA sports. I recently started learning how to 
-                      code, I think it is an interesting subject and hope to someday land a job where I can put my skills into work. 
-                      In the mean time, please feel free to check out some of my projects below, I'll be adding more content as I improve. 
-                    </p>
-                </div>
-            </article>
-        </div>
-    </section>
-            <!-- insert resume here -->
-            <!-- <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+    </nav>
+    <!-- Page Content -->
+    <div class="w3-main w3-padding-large" style="margin-left:40%">
+        <!-- Menu icon to open sidebar -->
+        <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;"
+            onclick="openNav()"><i class="fa fa-bars"></i></span>
+        <!-- Header -->
+        <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+            <h1 class="w3-jumbo"><b>Eder Francisco Ramos</b></h1>
+            <p>Current Web Developer Student .</p>
+            <img src="./assets/images/me.jpeg" class="w3-image w3-hide-large w3-hide-small w3-round"
+                style="display:block;width:60%;margin:auto;">
+            <img src="./assets/images/me.jpeg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000"
+                height="1333">
+
+            <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
                 <a href="./assets/images/fcbarca.jpg" download="barca"><i class="fa fa-download"></i> Download Resume</a>
-            </button> -->
+            </button>
         </header>
         <!-- Portfolio Section -->
         <div class="w3-padding-32 w3-content" id="portfolio">
@@ -63,27 +62,62 @@
             </div>
             <!-- End Portfolio Section -->
         </div>
-        <article class="projects">
-            <div class="grid-wrapper">
-                <div class="grid-container">
-                    <div class="grid-item a1">
-                        <a target="_blank" href="#">MyPortfolio</a>
-                    </div>
-                    <div class="grid-item a2">
-                        <a href="#">Comming Soon</a>
-                    </div>
-                    <div class="grid-item a3">
-                        <a href="#"></a>
-                    </div>
-                    <div class="grid-item a4">
-                        <a target="_blank" href="https://eramos3.github.io/run-buddy/">Run-Buddy</a>
-                    </div>
-                    <div class="grid-item a5">
-                        <a href="#">Comming Soon</a>
-                    </div>
-                    <div class="grid-item a6">
-                        <a target="_blank" href="https://eramos3.github.io/horiseonrefactorcode/">Horiseon</a>
-                    </div>
+        <!-- About Section -->
+        <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+            <h2>About</h2>
+            <hr class="w3-opacity">
+            <p>Hello, welcome to my portfolio. As you can see I'm a big sports fan, actually more of a soccer
+                fan overall but, I still like to be a super-fan when it comes to LA sports. I recently started learning
+                how to
+                code, I think it is an interesting subject and hope to someday land a job where I can put my skills to
+                work.
+                In the mean time, please feel free to check out some of my projects below, I'll be adding more content
+                as I improve.
+            </p>
+            <h3 class="w3-padding-16">My Skills</h3>
+            <p class="w3-wide"></p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:100%">Web Design</div>
+            </div>
+            <p class="w3-wide"></p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:100%">JavaScript</div>
+            </div>
+            <!-- <p class="w3-wide"></p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:100%"></div>
+            </div>-->
+            <br>
+            <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+                <div class="w3-section">
+                    <span class="w3-xlarge">10+</span><br>
+                    Projects Created
+                </div>
+            </div>
+            <div>
+                <h3 class="w3-padding-16">My Projects</h3>
+                <div class="w3-row-padding">
+                    <div class="w3-col w3-container l6 w3-grey"><a target="_blank"
+                            href="https://eramos3.github.io/horiseonrefactorcode/">Horiseon</a></div>
+                    <div class="w3-col w3-container l6"> <a target="_blank"
+                            href="https://eramos3.github.io/run-buddy/">Run-Buddy</a></div>
+                </div>
+                <div class="w3-row-padding">
+                    <div class="w3-col w3-container l6 w3-grey"><a target="_blank"
+                            href="https://eramos3.github.io/passwordgenerator/">Password Generator</a></div>
+                    <div class="w3-col w3-container l6"><a target="_blank"
+                            href="https://eramos3.github.io/work-day-scheduler/">Day Scheduler</a></div>
+                </div>
+                <div class="w3-row-padding">
+                    <div class="w3-col w3-container l6 w3-grey"><a target="_blank"
+                            href="https://eramos3.github.io/Weather-Dashboard/">Weather Dashboard</a></div>
+                    <div class="w3-col w3-container l6"><a target="_blank"
+                            href="https://mooka0.github.io/covid19-info-hub/">Covid-19 Info Hub</a></div>
+                </div>
+                <!-- <div class="w3-row-padding">
+                    <div class="w3-col w3-container l6 w3-grey">7</div>
+                    <div class="w3-col w3-container l6"><a target="_blank"
+                        href="https://eramos3.github.io/passwordgenerator/">Password Generator</a></div>
                 </div>
                 <div class="w3-row-padding">
                     <div class="w3-col w3-container l6 w3-grey"><a target="_blank"
@@ -91,6 +125,12 @@
                     <div class="w3-col w3-container l6"><a target="_blank"
                         href="https://eramos3.github.io/passwordgenerator/">Password Generator</a></div>
                 </div>
+                <div class="w3-row-padding">
+                    <div class="w3-col w3-container l6 w3-grey"><a target="_blank"
+                        href="https://eramos3.github.io/passwordgenerator/">Password Generator</a></div>
+                    <div class="w3-col w3-container l6"><a target="_blank"
+                        href="https://eramos3.github.io/passwordgenerator/">Password Generator</a></div>
+                </div> -->
             </div>
 
 
@@ -113,19 +153,18 @@
             </div>
             <!-- End Contact Section -->
         </div>
-       <article class="article-container">
-           <h4>
-               <p>Feel free to reach out at any of the following links</p>
-           </h4>
-           <div>
-                <ul>
-                   <li><address> E: <a  href="mailto:efpramos3@gmail.com">Eder F Ramos</a></address></li>
-                    <li><a target="_blank" href="https://www.linkedin.com/in/eder-r-224074127">linkedin</a></li>
-                    <li><a target="_blank" href="https://github.com/eramos3">github</a></li>
-                </ul>
-           </div>
-       </article>
-    </footer>
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+            <a target="_blank" href="https://www.linkedin.com/in/eder-r-224074127"><i
+                    class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <a target="_blank" href="https://github.com/eramos3"><i class="fa fab fa-github w3-hover-opacity"></i></a>
+            <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+                    class="w3-hover-text-green">w3.css</a></p>
+            <!-- End footer -->
+        </footer>
+        <!-- END PAGE CONTENT -->
+    </div>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
