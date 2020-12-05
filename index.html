@@ -1,37 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+<html>
+<title>Eder F Ramos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./assets/css/style.css">
+
 <body>
-    <!-- Navigation -->
-    <header>
-        <h1><a href="#">Cisco's Portfolio</a></h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact Info</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- hero -->
-    <section class="hero"></section>
-
-    <!-- about section -->
-    <section id="about">
-        <div class="sectitle flexrow ">
-            <h2>About Me</h2>
+    <!-- Sidebar with image -->
+    <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+        <div class="bgimg"></div>
+    </nav>
+    <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+    <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge"
+        style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+        <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright"
+            style="padding:0 12px;">
+            <i class="fa fa-remove"></i>
+        </a>
+        <div class="w3-bar-block w3-center">
+            <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+                onclick="closeNav()">Portfolio</a>
+            <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+                onclick="closeNav()">Contact</a>
         </div>
         <div>
             <article class="content">
@@ -49,10 +45,23 @@
         </div>
     </section>
 
-    <!-- projects section -->
-    <section id="projects">
-        <div class="flexrow sectitle">
-            <h2>My Projects</h2>
+            <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+                <a href="./assets/images/fcbarca.jpg" download><i class="fa fa-download"></i> Download Resume</a>
+            </button>
+        </header>
+        <!-- Portfolio Section -->
+        <div class="w3-padding-32 w3-content" id="portfolio">
+            <h2 class="w3-text-grey">My Portfolio</h2>
+            <hr class="w3-opacity">
+            <!-- Grid for photos -->
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-half">
+                </div>
+                <div class="w3-half">
+                </div>
+                <!-- End photo grid -->
+            </div>
+            <!-- End Portfolio Section -->
         </div>
         <article class="projects">
             <div class="grid-wrapper">
@@ -76,14 +85,33 @@
                         <a target="_blank" href="https://eramos3.github.io/horiseonrefactorcode/">Horiseon</a>
                     </div>
                 </div>
+                <div class="w3-row-padding">
+                    <div class="w3-col w3-container l6 w3-grey"><a target="_blank"
+                        href="https://eramos3.github.io/passwordgenerator/">Password Generator</a></div>
+                    <div class="w3-col w3-container l6"><a target="_blank"
+                        href="https://eramos3.github.io/passwordgenerator/">Password Generator</a></div>
+                </div>
             </div>
-        </article>
-    </section>
 
-    <!-- contact section -->
-    <footer id="contact">
-        <div class="flexrow sectitle">
+
+
+            <!-- resume -->
+            <!-- <button class="w3-button w3-light-grey w3-padding-large w3-section">
+                <i class="fa fa-download"></i> Download Resume
+            </button>
+             -->
+            <!-- End About Section -->
+        </div>
+        <!-- Contact Section -->
+        <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
             <h2>Contact Me</h2>
+            <hr class="w3-opacity">
+            <div class="w3-section">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Los Angeles, US</p>
+                <address><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i> Email: <a
+                        href="mailto:efpramos3@gmail.com">Eder F Ramos</address>
+            </div>
+            <!-- End Contact Section -->
         </div>
        <article class="article-container">
            <h4>
@@ -99,4 +127,5 @@
        </article>
     </footer>
 </body>
+
 </html>

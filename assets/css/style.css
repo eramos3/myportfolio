@@ -1,71 +1,17 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-:root {
-      --blue: #194775;
-      --orange: #e3bd4a;
-      --red: #b22f2f;
-      --yellow: #fbfb46;
-  }
-
-  body {
-      background-color: var(--blue);
-  }
-
-  a {
-    color: var(--orange);
-    text-decoration: none;
-  }
-
-  a:hover {
-    font-weight: bolder;
-    color: var(--blue);
-  }
-  header {
-    padding: 20px;
-    background-color: var(--red);
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 7px;
-  }
-
-  header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+body, h1,h2,h3,h4,h5,h6 {
+  font-family: "Montserrat", sans-serif
 }
-
-header a {
-    padding: 10px;
-    margin-right: 5px;
-    font-size: 36px;
-    font-weight: bolder;
+.w3-row-padding img {
+  margin-bottom: 12px
 }
-
-li {
-    list-style: none;
-  }
-
-  /* hero section */
-.hero {
-    height: 400px;
-    background-image: url("../images/fcbarca.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .flexrow {
-    display: flex;
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/me.jpeg");
+  min-height: 100%;
 }
+<<<<<<< HEAD
 
 .sectitle {
     font-size: 40px;
@@ -393,3 +339,5 @@ li {
     font-size: 13px;
   }
 }
+=======
+>>>>>>> develop
